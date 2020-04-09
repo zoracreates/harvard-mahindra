@@ -1,0 +1,14 @@
+<script>
+    /* wrapp logo and main menu*/
+    var logo = document.getElementById('block-boxes-1585939273');
+    var primaryNav = document.getElementById('block-os-primary-menu');
+
+    var menuWrapper = document.createElement('div');
+
+    menuWrapper.setAttribute("id", "menu-wrapper");
+
+    logo.parentNode.insertBefore(menuWrapper, logo);
+
+    menuWrapper.appendChild(logo);
+    menuWrapper.appendChild(primaryNav);
+</script>
