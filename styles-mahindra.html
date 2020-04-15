@@ -261,7 +261,7 @@
 
     #columns .band {
         padding: 60px 0;
-    } 
+    }
 
     #columns .band.no-padding-bottom {
         padding-bottom: 0px;
@@ -455,6 +455,10 @@
     #menu-bar ul.nice-menu .menuparent>a:before {
         top: -4px;
         right: 10px;
+    }
+
+    #menu-bar.fixed {
+        opacity: 1 !important;
     }
 
     #header ul.nice-menu a {
@@ -694,19 +698,17 @@
 
     /* landing page hero */
 
-    .landing #header,
-    .landing #menu-bar,
-    .landing #main-content-header,
-    .landing #block-os-pages-main-content  {
-        background-color: #231F20;
-    }
-
     .landing #page-title,
     .landing .breadcrumb a,
     .landing .breadcrumb span,
     .landing #block-os-pages-main-content,
     .landing #block-os-pages-main-content a {
         color: #F5F5F5;
+    }
+
+    .landing #block-os-pages-main-content p {
+        font-size: 28px;
+        font-weight: 700;
     }
 
     .landing #block-os-pages-main-content {
@@ -720,6 +722,73 @@
 
     .landing .breadcrumb {
         padding-top: 60px;
+    }
+
+    .landing #header,
+    .landing #menu-bar,
+    .landing #main-content-header,
+    .landing #block-os-pages-main-content {
+        background-color: #231F20 !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+    }
+
+    .landing.about #header,
+    .landing.about #menu-bar,
+    .landing.about #main-content-header,
+    .landing.about #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/about-banner.jpg) !important;
+    }
+
+    .landing.events #header,
+    .landing.events #menu-bar,
+    .landing.events #main-content-header,
+    .landing.events #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(/files/mahindra/files/events-banner.jpg) !important;
+    }
+
+    .landing.news #header,
+    .landing.news #menu-bar,
+    .landing.news #main-content-header,
+    .landing.news #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/news-banner.jpg) !important;
+    }
+
+    .landing.seminars #header,
+    .landing.seminars #menu-bar,
+    .landing.seminars #main-content-header,
+    .landing.seminars #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/seminars-banner.jpg) !important;
+    }
+
+    .landing.opportunities #header,
+    .landing.opportunities #menu-bar,
+    .landing.opportunities #main-content-header,
+    .landing.opportunities #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/opportunities-banner.jpg) !important;
+    }
+
+    .landing.get #header,
+    .landing.get #menu-bar,
+    .landing.get #main-content-header,
+    .landing.get #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/get-banner.jpg) !important;
+    }
+
+    .landing.videos #header,
+    .landing.videos #menu-bar,
+    .landing.videos #main-content-header,
+    .landing.videos #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/videos-banner.jpg) !important;
+    }
+
+    .landing.fellowships #header,
+    .landing.fellowships #menu-bar,
+    .landing.fellowships #main-content-header,
+    .landing.fellowships #block-os-pages-main-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/fellowships-banner.jpg) !important;
     }
 
 
