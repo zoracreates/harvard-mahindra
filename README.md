@@ -10,7 +10,7 @@ The following CSS and JavaScript files have been added to the new Mahindra Human
 5. Make upcoming events easier to find
 6. Improve the overall navigation of the site by eliminating repetitive content and condensing navigational structure
 
-## Key features include:
+## Key features include
 * Custom cards
 * Custom typography and type hierarchy
 * Hero images on landing pages extend up to the menu. 
