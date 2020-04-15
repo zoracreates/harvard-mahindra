@@ -184,7 +184,6 @@
         width: 100%;
     }
 
-
     .branding-container,
     .landing #main-content-header .main-content,
     #content-column .band>.block-inner,
@@ -204,7 +203,7 @@
     .not-front:not(.landing) #columns,
     #header-container,
     #content-column .block-boxes-os_boxes_widget_slider .block-inner,
-    .landing div#block-os-pages-main-content > .block-inner {
+    .landing div#block-os-pages-main-content>.block-inner {
         width: 98%;
         max-width: 1170px;
         margin: auto;
@@ -240,8 +239,7 @@
         margin: 60px auto 60px auto;
     }
 
-    .front #columns #columns,
-    .not-front.landing #columns {
+    .front #columns #columns {
         padding-top: 60px;
     }
 
@@ -465,12 +463,7 @@
         padding: 4px 0 9px 0;
     }
 
-    /*landing  main menu*/
-
-    .landing #header,
-    .landing #menu-bar {
-        background: #231F20;
-    }
+    /*landing main menu*/
 
     .landing #header ul.nice-menu li.first a {
         border: 2px #F5F5F5 solid;
@@ -691,7 +684,36 @@
 
     /*** CUSTOM STYLES  ***/
 
-    /* landig page menu */
+    /* landing page hero */
+
+    .landing #header,
+    .landing #menu-bar,
+    .landing #main-content-header,
+    .landing #block-os-pages-main-content  {
+        background-color: #231F20;
+    }
+
+    .landing #page-title,
+    .landing .breadcrumb a,
+    .landing .breadcrumb span,
+    .landing #block-os-pages-main-content,
+    .landing #block-os-pages-main-content a {
+        color: #F5F5F5;
+    }
+
+    .landing #block-os-pages-main-content {
+        padding-bottom: 30px;
+    }
+
+    .landing #main-content-header {
+        padding-top: 85px;
+        margin-top: -85px;
+    }
+
+    .landing .breadcrumb {
+        padding-top: 60px;
+    }
+
 
     /*seminars*/
 
@@ -909,6 +931,34 @@
             background: transparent;
         }
 
+        /* mobile landing main menu */
+        #header ul.nice-menu li.first a,
+        #header ul.nice-menu li.first a:hover,
+        .landing #header ul.nice-menu li.first a,
+        .landing #header ul.nice-menu li.first a:hover {
+            border: none;
+        }
+
+        /* 
+        only uncomment if you want the sandard branding bar on mobile
+        .landing #header,
+        .landing #menu-bar {
+            background: #F5F5F5;
+        } 
+
+        .landing #branding_header {
+            background-color: #231F20;
+        }
+
+        .landing div#header-container {
+            padding-top: 20px;
+        }
+
+        .landing #header {
+            margin-top: 0px;
+        }
+        */
+
     }
 
     @media(max-width:768px) {
@@ -938,31 +988,6 @@
         }
 
         /*** CUSTOM STYLES  ***/
-
-        /* mobile landing main menu */
-        .landing #header,
-        .landing #menu-bar {
-            background: #F5F5F5;
-        }
-
-        #header ul.nice-menu li.first a,
-        #header ul.nice-menu li.first a:hover,
-        .landing #header ul.nice-menu li.first a,
-        .landing #header ul.nice-menu li.first a:hover {
-            border: none;
-        }
-
-        .landing #branding_header {
-            background-color: #231F20;
-        }
-
-        .landing div#header-container {
-            padding-top: 20px;
-        }
-
-        .landing #header {
-            margin-top: 0px;
-        }
     }
 
     @media(max-width:670px) {
