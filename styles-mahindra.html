@@ -582,11 +582,21 @@
     }
 
     #footer,
-    #branding_footer,
-    #branding_header {
+    #branding_footer {
         background-color: #231F20;
         color: #F5F5F5;
     }
+
+    #branding_header {
+        background-color: #6E7072;
+        color: #F5F5F5;
+    }
+
+    #footer .footer-login {
+        color: #F5F5F5;
+        text-shadow: none;
+    }
+
 
     #footer .block-boxes-os_boxes_columns h2.block-title,
     .page-node #content-column .content-inner {
@@ -938,6 +948,50 @@
         margin-bottom: 0px;
     }
 
+    .secondary-band {
+        background-color: #D4D4D4;
+    }
+
+    /* home events slider*/
+
+    .events-slider img.media-element.file-default.file-os-files-xxlarge {
+        padding-right: 0px;
+    }
+
+    .events-slider p:first-child,
+    .events-slider img:first-child {
+        z-index: -100;
+    }
+
+    .events-slider h2,
+    .events-slider p:not(:first-child) {
+        z-index: 10;
+    }
+
+    .events-slider h2,
+    .events-slider p:nth-child(2) {
+        position: absolute;
+        left: 0;
+        top: 10%;
+    }
+
+    .events-slider h2 + p {
+        position: absolute;
+        left: 0;
+        top: 20%;
+    }
+
+
+    /*curator*/
+    .front #columns .block-boxes-os_boxes_media img.crt-post-userimage {
+        width: 24px;
+
+    }
+
+    .crt-grid-post:not(:last-child) {
+        border-right: 1px solid transparent;
+    }
+
     /* BROSWER SPECIFIC RULES */
 
     /* FF RULES */
@@ -1015,6 +1069,15 @@
         .landing #header ul.nice-menu li.first a:hover {
             border: none;
         }
+
+        .link-count-mobi-main a {
+            background-color: #A41135;
+        }
+
+        .link-count-mobi-util a {
+            background-color: #231F20;
+        }
+
     }
 
     @media(max-width:768px) {
