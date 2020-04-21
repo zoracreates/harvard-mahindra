@@ -737,6 +737,14 @@
         text-shadow: 1px 1px 5px #000;
     }
 
+    .events-slider h2 a {
+        background-image: url(https://hwpi.harvard.edu/files/mahindra/files/arrow-white.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        padding-right: 50px;
+        background-size: 40px;
+    }
+
     .events-slider h2,
     .events-slider h2 a {
         top: 30%;
@@ -768,7 +776,7 @@
     .events-slider p:first-child::after {
         position: absolute;
         content: "";
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.55));
         z-index: 3;
         top: 0;
         left: 0;
@@ -1140,7 +1148,8 @@
         .events-slider h2,
         .events-slider h2+p {
             position: static;
-            text-shadow: none;;
+            text-shadow: none;
+            ;
         }
 
         .events-slider p:first-child::after {
@@ -1160,6 +1169,10 @@
 
         .events-slider #layout_16_9_side .rslides img {
             float: none;
+        }
+
+        .events-slider h2 a {
+            background-image: url(https://hwpi.harvard.edu/files/mahindra/files/arrow-black.png);
         }
 
     }
@@ -1197,9 +1210,13 @@
             font-size: 50px;
         }
 
-        .events-slider h2+p, 
-        .events-slider h2+p a
-        .landing #block-os-pages-main-content p {
+        .events-slider h2 a {
+            padding-right: 40px;
+            background-size: 30px;
+        }
+
+        .events-slider h2+p,
+        .events-slider h2+p a .landing #block-os-pages-main-content p {
             font-size: 20px;
         }
     }
