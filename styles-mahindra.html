@@ -32,7 +32,7 @@
     body,
     a,
     a:visited {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif !important;
         font-weight: 300;
         line-height: 1.5;
     }
@@ -98,6 +98,7 @@
 
     .landing h1#page-title {
         font-size: 90px;
+        text-shadow: 1px 1px 5px #000;
     }
 
     a.more-link,
@@ -706,6 +707,76 @@
 
     /*** CUSTOM STYLES  ***/
 
+    /* home events slider*/
+
+    .events-slider,
+    .events-slider a {
+        color: #f5f5f5;
+    }
+
+    .events-slider img.media-element.file-default.file-os-files-xxlarge {
+        padding-right: 0px;
+    }
+
+    .events-slider p:first-child,
+    .events-slider img:first-child {
+        z-index: -100;
+        display: block;
+    }
+
+    .events-slider h2,
+    .events-slider p:not(:first-child) {
+        z-index: 10;
+    }
+
+    .events-slider h2,
+    .events-slider h2+p {
+        position: absolute;
+        left: 10%;
+        width: 70%;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .events-slider h2,
+    .events-slider h2 a {
+        top: 30%;
+        font-size: 60px;
+        font-family: 'Oswald', sans-serif !important;
+        text-transform: uppercase;
+        line-height: normal;
+    }
+
+    .events-slider h2+p,
+    .events-slider h2+p a {
+        top: 50%;
+        font-size: 28px;
+        font-weight: 700;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .events-slider p:first-child {
+        margin: 0;
+    }
+
+    .events-slider p:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .events-slider p:first-child::after {
+        position: absolute;
+        content: "";
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45));
+        z-index: 3;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+
     /* landing page hero */
 
     .landing #page-title,
@@ -719,6 +790,17 @@
     .landing #block-os-pages-main-content p {
         font-size: 28px;
         font-weight: 700;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .landing .breadcrumb,
+    .not-front.landing #menu-bar ul.nice-menu a,
+    .landing #header ul.nice-menu li.first a {
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .landing #header ul.nice-menu li.first a:hover {
+        text-shadow: none;
     }
 
     .landing #block-os-pages-main-content {
@@ -952,35 +1034,6 @@
         background-color: #D4D4D4;
     }
 
-    /* home events slider*/
-
-    .events-slider img.media-element.file-default.file-os-files-xxlarge {
-        padding-right: 0px;
-    }
-
-    .events-slider p:first-child,
-    .events-slider img:first-child {
-        z-index: -100;
-    }
-
-    .events-slider h2,
-    .events-slider p:not(:first-child) {
-        z-index: 10;
-    }
-
-    .events-slider h2,
-    .events-slider p:nth-child(2) {
-        position: absolute;
-        left: 0;
-        top: 10%;
-    }
-
-    .events-slider h2 + p {
-        position: absolute;
-        left: 0;
-        top: 20%;
-    }
-
 
     /*curator*/
     .front #columns .block-boxes-os_boxes_media img.crt-post-userimage {
@@ -1014,7 +1067,7 @@
     }
 
     /* BROSWER SPECIFIC RULES END */
-
+    @media (max-width: 1080px) {}
 
 
     @media(max-width:1008px) {
@@ -1078,6 +1131,37 @@
             background-color: #231F20;
         }
 
+        .events-slider,
+        .events-slider a {
+            color: #231F20;
+        }
+
+        .events-slider p:first-child,
+        .events-slider h2,
+        .events-slider h2+p {
+            position: static;
+            text-shadow: none;;
+        }
+
+        .events-slider p:first-child::after {
+            display: none;
+        }
+
+        .events-slider.block-boxes-os_boxes_widget_slider #layout_16_9_side .slide img,
+        .events-slider h2,
+        #columns .events-slider h2+p {
+            width: 90% !important;
+            margin: auto;
+        }
+
+        .events-slider h2 {
+            margin: 30px auto;
+        }
+
+        .events-slider #layout_16_9_side .rslides img {
+            float: none;
+        }
+
     }
 
     @media(max-width:768px) {
@@ -1107,6 +1191,17 @@
         }
 
         /*** CUSTOM STYLES  ***/
+        .events-slider h2,
+        .events-slider h2 a,
+        .landing h1#page-title {
+            font-size: 50px;
+        }
+
+        .events-slider h2+p, 
+        .events-slider h2+p a
+        .landing #block-os-pages-main-content p {
+            font-size: 20px;
+        }
     }
 
     @media(max-width:670px) {
