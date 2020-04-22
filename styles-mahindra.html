@@ -309,9 +309,7 @@
     }
 
     .region-header-third ul.nice-menu {
-        margin-top: 10px;
         padding-bottom: 10px;
-        margin-bottom: -30px;
     }
 
     #menu-wrapper {
@@ -322,7 +320,7 @@
     }
 
     #menu-bar nav#block-os-primary-menu {
-        max-width: 650px;
+        max-width: 692px;
         margin: 0;
         display: flex;
         align-items: flex-end;
@@ -396,7 +394,9 @@
     .not-front #menu-bar ul.nice-menu a:hover,
     #menu-bar.fixed ul.nice-menu a:hover,
     #menu-bar ul.nice-menu a.active,
-    #menu-bar ul.nice-menu a:hover {
+    #menu-bar ul.nice-menu a:hover,
+    #menu-bar ul.nice-menu .menuparent a:hover,
+    #menu-bar ul.nice-menu .menuparent.over > a {
         color: #231F20;
     }
 
@@ -415,7 +415,8 @@
         width: 100%;
     }
 
-    #menu-bar ul.nice-menu a~ul li a:hover:after {
+    #menu-bar ul.nice-menu a~ul li a:hover:after,
+    #menu-bar ul.nice-menu a~ul li a.active:after {
         width: 0;
     }
 
@@ -429,8 +430,25 @@
     }
 
     #menu-bar ul.nice-menu ul {
-        background: #1E4164;
+        background: #A41135;
     }
+
+    #menu-bar ul.nice-menu .menuparent ul li a,
+    #menu-bar ul.nice-menu .menuparent ul li a:hover {
+        color: #f5f5f5;
+        padding-right: 25px;
+    }
+
+    .landing #menu-bar ul.nice-menu .menuparent ul li a {
+        text-shadow: none;
+    }
+
+    #menu-bar ul.nice-menu .menuparent ul li:hover,
+    #menu-bar ul.nice-menu .menuparent ul li.active {
+        background-color: #6A0B22 !important;
+        width: 100%;
+    }
+    
 
     #menu-bar ul.nice-menu .menuparent a {
         padding-right: 25px;
@@ -440,9 +458,7 @@
         padding-right: 0;
     }
 
-    .front #menu-bar ul.nice-menu .menuparent a:before {
-        background-position: 0 -566px;
-    }
+
 
     .front #menu-bar ul.nice-menu .menuparent a:before,
     .not-front #menu-bar ul.nice-menu .menuparent a:before,
@@ -450,7 +466,14 @@
     #menu-bar.fixed ul.nice-menu .menuparent.over>a:before,
     #menu-bar.fixed ul.nice-menu .menuparent a:hover:before,
     #menu-bar.fixed ul.nice-menu .menuparent a.active:before {
-        background-position: -12px -566px;
+        background-position: -57px -566px;
+    }
+
+    .not-front.landing #menu-bar ul.nice-menu .menuparent a:before,
+    .landing #menu-bar.fixed ul.nice-menu .menuparent.over>a:before,
+    .landing #menu-bar.fixed ul.nice-menu .menuparent a:hover:before,
+    .landing #menu-bar.fixed ul.nice-menu .menuparent a.active:before {
+        background-position: 0px -566px;
     }
 
     #menu-bar ul.nice-menu .menuparent>a:before {
@@ -1135,8 +1158,17 @@
             background-color: #A41135;
         }
 
+        .open-submenu,
         .link-count-mobi-util a {
             background-color: #231F20;
+        }
+
+        .open-submenu:after {
+            color: #F5F5F5;
+        }
+
+        .events-slider {
+            background-color: #fff;
         }
 
         .events-slider,
