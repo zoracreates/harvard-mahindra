@@ -400,7 +400,7 @@
     #menu-bar ul.nice-menu a.active,
     #menu-bar ul.nice-menu a:hover,
     #menu-bar ul.nice-menu .menuparent a:hover,
-    #menu-bar ul.nice-menu .menuparent.over > a {
+    #menu-bar ul.nice-menu .menuparent.over>a {
         color: #231F20;
     }
 
@@ -452,7 +452,7 @@
         background-color: #6A0B22 !important;
         width: 100%;
     }
-    
+
 
     #menu-bar ul.nice-menu .menuparent a {
         padding-right: 25px;
@@ -732,7 +732,38 @@
         clip: rect(1px 1px 1px 1px);
     }
 
+    .landing.events #content-column .upcoming h2.block-title {
+        margin-bottom: 0px;
+    }
+
     /*** CUSTOM STYLES  ***/
+
+    /*buttons*/
+    p.os-button a,
+    p.os-button a:visited {
+        padding: 12px;
+        background: #A41135;
+        color: #F5F5F5;
+        transition: 0.5s;
+    }
+
+    p.os-button a:hover {
+        background: #6A0B22;
+    }
+
+    #columns p.os-button a,
+    #columns p.os-button a:visited,
+    #columns p.os-link-button a {
+        font-family: 'Oswald', sans-serif !important;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 16px;
+        text-decoration: none;;
+    }
+
+    a.more-link {
+        font-size: 16px;
+    }
 
     /* home events slider*/
 
@@ -926,7 +957,8 @@
         display: none
     }
 
-    #content-column .seminar-search .block-content.content h2.block-title {
+    #content-column .seminar-search .block-content.content h2.block-title,
+    #content-column .fellow-search .block-content.content h2.block-title {
         font-family: 'Oswald', sans-serif !important;
         text-transform: capitalize;
         font-size: 18px;
@@ -936,7 +968,8 @@
         font-weight: normal;
     }
 
-    .seminar-search .form-item {
+    .seminar-search .form-item,
+    .fellow-search .form-item {
         margin: 0;
     }
 
@@ -1058,6 +1091,10 @@
         padding: 20px;
     }
 
+    .white-block .block-content.content .at-panel .boxes-box {
+        padding: 0;
+    }
+
     .white-block h2.block-title {
         padding-bottom: 5px;
     }
@@ -1079,6 +1116,10 @@
 
     .crt-grid-post:not(:last-child) {
         border-right: 1px solid transparent;
+    }
+
+    .crt-grid-post .crt-social-icon {
+        bottom: 2px;
     }
 
     /* BROSWER SPECIFIC RULES */
