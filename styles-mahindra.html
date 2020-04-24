@@ -13,7 +13,8 @@
     }
 
     /* prevent horizontal scroll*/
-    html {
+    html,
+    body {
         overflow-x: hidden;
     }
 
@@ -758,7 +759,8 @@
         text-transform: uppercase;
         font-weight: normal;
         font-size: 16px;
-        text-decoration: none;;
+        text-decoration: none;
+        ;
     }
 
     a.more-link {
@@ -843,6 +845,48 @@
         width: 100%;
     }
 
+    /* videos slider */
+
+    .video-slider h2 {
+        font-size: 45px; 
+        font-family: 'Oswald', sans-serif !important;
+        text-transform: uppercase;
+        line-height: normal;
+    }
+
+    .video-slider.block-boxes-os_boxes_widget_slider #layout_16_9_side div.field-item,
+    .video .field-item {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 75%;
+        height: 0 !important ;
+        width: 100%;
+    }
+
+    .video .field-item iframe {
+        position: absolute;
+        height: 100% !important;
+        width: 100% !important;
+        border: none;
+    }
+
+    .video-slider .block-inner {
+        background-color: #fff;
+    }
+
+    .video-slider .region-two-50-second {
+        margin-left: 3.5%;
+    }
+
+    .video-slider p {
+        font-size: 20px;
+    }
+
+    #columns .video-slider .region-two-50-second .region-inner {
+        padding: 20px !important;
+    }
 
     /* landing page hero */
 
@@ -1253,6 +1297,11 @@
             background-image: url(https://hwpi.harvard.edu/files/mahindra/files/arrow-black.png);
         }
 
+        .video-slider .region-two-50-second {
+            padding-left: 0px;
+        }
+
+
     }
 
     @media(max-width:768px) {
@@ -1286,6 +1335,10 @@
         .events-slider h2 a,
         .landing h1#page-title {
             font-size: 50px;
+        }
+
+        .video-slider h2 {
+            font-size: 35px;
         }
 
         .events-slider h2 a {
