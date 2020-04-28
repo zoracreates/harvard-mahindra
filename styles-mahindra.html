@@ -745,31 +745,86 @@
     /*** CUSTOM STYLES  ***/
 
     /*buttons*/
-    p.os-button a,
-    p.os-button a:visited {
+
+    .os-link-button a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        display: inline-block;
+    }
+
+    .os-button a,
+    .os-button a:visited {
         padding: 12px;
         background: #A41135;
         color: #F5F5F5;
         transition-duration: .6s;
+        display: inline-block;
     }
 
     p.os-button a:hover {
         background: #6A0B22;
     }
 
-    #columns p.os-button a,
-    #columns p.os-button a:visited,
-    #columns p.os-link-button a {
+    #columns .os-button a,
+    #columns .os-button a:visited,
+    #columns .os-link-button a {
         font-family: 'Oswald', sans-serif !important;
         text-transform: uppercase;
         font-weight: normal;
         font-size: 16px;
         text-decoration: none;
-        ;
     }
 
     a.more-link {
         font-size: 16px;
+    }
+
+    ul.social-icons {
+        display: flex
+    }
+
+    ul.social-icons li {
+        list-style: none;
+    }
+
+    ul.social-icons span {
+        position: absolute;
+        top: -999px;
+        left: -999px;
+        font-size: 0px;
+        line-height: 0;
+    }
+
+    ul.social-icons img {
+        max-width: 52px;
+    }
+
+    .about .social .region-three-33-third .boxes-box-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .about .social ul.social-icons {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    .about .social ul.social-icons img.media-element.file-default {
+        padding: 0px;
+    }
+
+    .about .social ul.social-icons img {
+        transition-duration: .5s;
+    }
+
+    .about .social ul.social-icons img:hover {
+        filter: brightness(70%);
+    }
+
+    #footer ul.social-icons img {
+        max-width: 32px;
     }
 
     /* home events slider*/
@@ -999,6 +1054,37 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url(/files/mahindra/files/fellowships-banner.jpg) !important;
     }
 
+    /* opportunities */
+    .grad-conference ul p {
+        font-size: .76em;
+    }
+
+    .grad-conference ul {
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .grad-conference ul ul {
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .grad-conference p {
+        margin-bottom: .5em;
+    }
+
+    .grad-conference ul h3 {
+        font-size: .9em;
+    }
+
+    .grad-conference li {
+        list-style: none;
+        flex-basis: 50%;
+    }
+
 
     /*seminars*/
 
@@ -1132,7 +1218,64 @@
         margin-bottom: 20px;
     }
 
+    /* get involved */
+
+    .get .band:not(.secondary-band) .card p:first-child {
+        margin-bottom: 0px;
+    }
+
+    .get .card p::first-line,
+    .get .band.secondary-band .card p {
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: normal;
+    }
+
+    .get .card p {
+        line-height: 1.5;
+    }
+
+    .get .card p {
+        font-size: 2em;
+    }
+
+    .get .secondary-band .card p {
+        font-size: 1.6em;
+    }
+
+    .get .band:not(.secondary-band) .card p::first-line {
+        line-height: 1;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    .get .block-boxes-os_boxes_html:nth-child(even) {
+        margin-top: 60px;
+    }
+
+    .get .card .block-inner .boxes-box-content {
+        background: #fff;
+        position: static;
+        
+    }
+
+    .get #columns .card p:last-child {
+        border-bottom: 3px #939598 solid;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+    }
+
+    .get #columns .card p:last-child:hover {
+        border-bottom: 3px #A41135 solid;
+    }
+
+    .get #columns .card p:last-child:hover::first-line,
+    .get #columns .secondary-band .card p:last-child:hover {
+        color: #A41135;
+    }
+
     /*cards and blocks */
+
+
     #columns .no-top-padding {
         padding-top: 0
     }
@@ -1160,12 +1303,12 @@
         margin: 0px 0px 0em;
     }
 
-    .landing #columns .white-block .region-two-50-first p:only-child,
-    .landing #columns .white-block .region-two-50-first p:last-child,
-    .front #columns .white-block .region-two-50-first p:only-child,
-    .front #columns .white-block .region-two-50-first p:last-child,
-    .landing #columns .white-block .region-two-66-33-first p:only-child,
-    .landing #columns .white-block .region-two-66-33-first p:last-child,
+    .landing #columns .white-block:not(.event-feature) .region-two-50-first p:only-child,
+    .landing #columns .white-block:not(.event-feature) .region-two-50-first p:last-child,
+    .front #columns .white-block:not(.event-feature) .region-two-50-first p:only-child,
+    .front #columns .white-block:not(.event-feature) .region-two-50-first p:last-child,
+    .landing #columns .white-block:not(.event-feature) .region-two-66-33-first p:only-child,
+    .landing #columns .white-block:not(.event-feature) .region-two-66-33-first p:last-child,
     .front #columns .white-block .region-two-66-33-first p:only-child,
     .front #columns .white-block .region-two-66-33-first p:last-child,
     .landing #columns .white-block:not(.event-feature) .region-two-50-first .boxes-box-content:last-child,
@@ -1210,19 +1353,19 @@
         padding: 0 10px;
     }
 
-    .card p:last-child {
-        height: 75px;
-        max-height: 75px;
+    .front .card p:last-child {
+        height: 125px;
+        max-height: 125px;
         overflow: hidden;
         position: relative;
         /* insert elipsis afte 3 lines, does not work on IE */
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
     }
 
     .front .card h3 {
-        bottom: 123px;
+        bottom: 173px;
         font-size: 24px;
     }
 
@@ -1402,7 +1545,12 @@
         .video-slider .region-two-50-second {
             padding-left: 0px;
         }
+    }
 
+    @media (max-width: 960px) {
+        .get .band:not(.secondary-band) .card p::first-line {
+            font-size: 1.5em;
+        }
 
     }
 
@@ -1416,10 +1564,6 @@
         .not-front .band h2.block-title,
         .front .block h2.block-title {
             padding-left: 20px;
-        }
-
-        .not-front .band.block-boxes-os_boxes_columns h2.block-title {
-            padding-left: 0;
         }
 
         .block-boxes-os_boxes_html.band .boxes-box-content,
@@ -1452,6 +1596,10 @@
         .events-slider h2+p a .landing #block-os-pages-main-content p {
             font-size: 20px;
         }
+
+        .get .band:not(.secondary-band) .card p::first-line {
+            font-size: 2em;
+        }
     }
 
     @media(max-width:670px) {
@@ -1481,6 +1629,17 @@
         }
 
         /*** CUSTOM STYLES  ***/
+        .grad-conference ul {
+            display: block;
+            margin: 0px
+        }
+
+        .grad-conference .os-link-button,
+        .grad-conference ul {
+            margin-bottom: 15px;
+        }
+
+
 
     }
 
