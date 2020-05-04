@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
 
 
@@ -16,6 +16,21 @@
 
         menuWrapper.appendChild(logo);
         menuWrapper.appendChild(primaryNav);
+
+        // makes lop news pic use full size image
+        setInterval(function () {
+            jQuery(".full-news-pic figure").each(function () {
+                jQuery(this).html(jQuery(this).html().replace("/styles/os_square_100_100/public", ""));
+            });
+        }, 250);
+
+        //PULL IN LARGE PROFILE PIC        
+        //setInterval(function(){ 
+
+        jQuery(".people-lop-lrg-pic article.node-person .field-name-field-person-photo").each(function () {
+            jQuery(this).html(jQuery(this).html().replace("profile_thumbnail", "profile_full"));
+        });
+       // }, 250);
 
         /* equal heights */
 
