@@ -1233,7 +1233,7 @@
 
     .get #columns .card p a {
         text-decoration: none;
-        color:#231F20;
+        color: #231F20;
     }
 
     .get .card p {
@@ -1248,7 +1248,7 @@
         font-size: 1.6em;
     }
 
-    .get .band:not(.secondary-band) .card p span{
+    .get .band:not(.secondary-band) .card p span {
         display: block;
     }
 
@@ -1265,7 +1265,7 @@
     .get .card .block-inner .boxes-box-content {
         background: #fff;
         position: static;
-        
+
     }
 
     .get #columns .card p:last-child {
@@ -1346,20 +1346,40 @@
         background-color: #fff;
     }
 
-    .card .block-inner .boxes-box-content {
+    /* STYLES FOR FLOATING TRANSPARENT CARD TITLES */
+    /* .card .block-inner .boxes-box-content {
         position: relative;
     }
 
     .card h2:not(.block-title),
-    .front .card h3 {
+    .card h3 {
         position: absolute;
         bottom: 7px;
         left: 0px;
         right: 0px;
         margin: 0px;
-        background-color: rgba(35, 31, 32, .9);
-        padding: 10px;
     }
+
+    #columns .card h2:not(.block-title) a,
+    #columns .card h3 a {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        background-color: rgba(35, 31, 32, .9);
+        box-sizing: border-box;
+        transition: .5s;
+        font-size: 24px;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: normal;
+    }
+
+    #columns .card h2:not(.block-title):hover a,
+    #columns .card h3:hover a {
+        transition-duration: .5s;
+        background-color: rgba(164, 17, 53, .9);
+    } */
+
 
     .card p:not(:first-child) {
         padding: 10px;
@@ -1393,16 +1413,11 @@
 
     .card h2:not(.block-title),
     .card h2 a,
-    .front .card h3 a,
-    .front .card h3 {
+    .card h3 a,
+    .card h3 {
         color: #F5F5F5;
     }
 
-    .card h2:not(.block-title):hover,
-    .front .card h3:hover {
-        transition-duration: .5s;
-        background-color: rgba(164, 17, 53, .9);
-    }
 
     .card p:first-child {
         margin-bottom: 0px;
