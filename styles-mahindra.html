@@ -1803,6 +1803,19 @@
         color: #A41135;
     }
 
+    /* events calendar*/
+    div[id^=event-popover] .event-title a,
+    .calendar-calendar td .inner div.day a,
+    .calendar-calendar div.date-nav a,
+    table td.mini .mini-day-on a {
+        color: #A41135 !important;
+    }
+
+    .calendar-calendar .month-view .full td.multi-day div.monthview,
+    .calendar-calendar .week-view .full td.multi-day div.weekview,
+    .calendar-calendar .day-view .full td.multi-day div.dayview {
+        background-color: #A41135;
+    }
 
     /* footer */
 
@@ -2049,6 +2062,18 @@
         .get .band:not(.secondary-band) .card p span {
             font-size: 2em;
         }
+
+        .node-event .node-header {
+            margin: -70px 0px 10px 50px !important;
+        }
+
+        .field-name-field-date.field-type-datetime,
+        .node-event .node-content,
+        .node-event .clearfix,
+        #content .node-event .event-content .node-content .field-name-field-event-location {
+            margin-left: 50px !important;
+        }
+
     }
 
     @media(max-width:670px) {
@@ -2106,6 +2131,14 @@
 
         .people-lop-lrg-pic article.node-person {
             margin: auto;
+        }
+
+        .view-os-events.view-id-os_events .attachment-before {
+            top: 0px;
+        }
+
+        .view-os-events ul li .node .field.field-name-body.field-type-text-with-summary {
+            margin-top: 20px;
         }
     }
 
