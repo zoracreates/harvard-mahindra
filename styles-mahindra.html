@@ -18,6 +18,28 @@
         overflow-x: hidden;
     }
 
+    h2,
+    h3 {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    h2.block-title,
+    .white-block h2,
+    .white-block h3,
+    .card h2,
+    .card h3 {
+        margin: 0px;
+    }
+
+    .not-front:not(.landing) #content-column .field-name-body h2 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
     /* base colors and type */
     html,
     body,
@@ -43,8 +65,6 @@
         color: #A41135;
     }
 
-    ul.pager li a,
-    ul.pager li a:visited,
     .event-content h1.node-title a,
     .event-content h1.node-title a:visited,
     .event-location,
@@ -57,6 +77,11 @@
     .node-person h1.node-title a:visited {
         color: #231F20;
         transition-duration: .5s;
+    }
+
+    ul.pager li a,
+    ul.pager li a:visited {
+        color: #231F20 !important;
     }
 
     .event-content h1.node-title a:hover,
@@ -345,7 +370,7 @@
     }
 
     #menu-bar nav#block-os-primary-menu {
-        max-width: 692px;
+        max-width: 754px;
         margin: 0;
         display: flex;
         align-items: flex-end;
@@ -779,8 +804,48 @@
         clip: rect(1px 1px 1px 1px);
     }
 
+
     .landing.events #content-column .upcoming h2.block-title {
         margin-bottom: 0px;
+    }
+
+    .small-title h1.node-title,
+    .white-block .event-content h1.node-title a {
+        font-size: 18px;
+    }
+
+    /* seminar pages */
+    .seminar-page .node.node-page .node-content strong {
+        display: none;
+    }
+
+    .seminar-page .sv-list-person {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .seminar-page .sv-list-person article {
+        flex-basis: 30%;
+        display: flex;
+    }
+
+    .seminar-page .sv-list-person article:not(:first-child) {
+        padding-left: 25px;
+    }
+
+    .seminar-page .sv-list-person .field-name-field-professional-title,
+    .seminar-page .no-default-image {
+        display: none;
+    }
+
+    /*past event videos*/
+    .not-front.node-type-event iframe {
+        width: 100%;
+        height: 315px;
+    }
+
+    .not-front.node-type-event .media-element-container {
+        margin: 0px;
     }
 
     /*** CUSTOM STYLES  ***/
@@ -826,6 +891,10 @@
 
     ul.social-icons li {
         list-style: none;
+    }
+
+    #columns ul.social-icons li a {
+        text-decoration: none;
     }
 
     ul.social-icons span {
@@ -1010,6 +1079,13 @@
     .landing.videos article.node-link.node-teaser {
         display: flex;
         flex-direction: column;
+        background-color: #231F20;
+        transition-duration: .5s;
+        padding-top: 0px;
+    }
+
+    .landing.videos article.node-link.node-teaser:hover {
+        background-color: #A41135;
     }
 
     .landing.videos article.node-link.node-teaser p {
@@ -1021,17 +1097,12 @@
     }
 
     .landing.videos article.node-link.node-teaser header {
-        background-color: #231F20;
         padding: 10px;
-        transition-duration: .5s;
-    }
-
-    .landing.videos article.node-link.node-teaser header:hover {
-        background-color: #A41135;
     }
 
     .landing.videos article.node-link.node-teaser header a {
         color: #f5f5f5;
+        font-size: 18px;
     }
 
     .landing.videos article.node-link {
@@ -1050,11 +1121,13 @@
     .landing.videos .sv-list-link {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .landing.videos .sv-list-link article {
-        flex-basis: 23%;
+        flex-basis: 23.5%;
+    }
+
+    .landing.videos .sv-list-link article:not(:nth-child(4n)) {
         margin-right: 2%;
     }
 
@@ -1072,6 +1145,10 @@
         font-family: 'Oswald', sans-serif !important;
         font-weight: normal;
         text-transform: uppercase;
+    }
+
+    .landing.videos .block .node:last-child {
+        margin-bottom: 20px;
     }
 
     /* search pages */
@@ -1267,7 +1344,7 @@
     }
 
     #columns .seminars-list p:last-child {
-        margin-bottom: 20px;
+        margin: 10px 0px 20px 0px;
     }
 
     #content-column .search-title .block-content.content h2.block-title {
@@ -1278,6 +1355,7 @@
         padding-bottom: 5px;
         letter-spacing: normal;
         font-weight: normal;
+        margin-left: 0px;
     }
 
     .search-title .form-item {
@@ -1309,30 +1387,7 @@
         border-color: #575757;
     }
 
-    /* Events */
-    .event-start span.event-year {
-        display: none;
-    }
 
-    .event-start .event-start {
-        width: 58px;
-        height: 70px;
-        background: #A41135;
-        padding-right: 8px;
-        margin-right: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        text-align: right;
-        border: none;
-        -webkit-border-bottom-right-radius: 0;
-        -webkit-border-bottom-left-radius: 0;
-        -moz-border-radius-bottomright: 0;
-        -moz-border-radius-bottomleft: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
 
     .seminars .sv-list-event {
         display: flex;
@@ -1361,6 +1416,7 @@
         background: #fff;
         border-bottom: 4px #231F20 solid;
         transition-duration: .5s;
+        position: relative;
     }
 
     .seminars-list .os-sv-list article:hover {
@@ -1396,11 +1452,12 @@
         right: 0;
     }
 
-    .seminars-list .os-sv-list article p:first-child {
+    .seminars-list .os-sv-list article p:first-child,
+    .seminars-list .os-sv-list article p:nth-child(2) {
         margin-bottom: 0;
     }
 
-    .seminars-list .os-sv-list article p:nth-child(2) {
+    .seminars-list .os-sv-list article p strong {
         font-weight: 700;
         font-size: 16px;
     }
@@ -1409,9 +1466,42 @@
         margin-bottom: 20px;
     }
 
+    /* Events */
+    .event-start span.event-year {
+        order: 3;
+        padding-top: 0px;
+        font-size: 12px
+    }
+
+    .event-start .event-start,
+    .event-start-month,
+    .event-start-day {
+        font-size: 1em;
+    }
+
+    .event-start .event-start {
+        font-size: 18px;
+        width: 58px;
+        height: 70px;
+        background: #A41135;
+        padding-right: 8px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        border: none;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-bottomright: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
 
     /*cards and blocks */
-
 
     #columns .no-top-padding {
         padding-top: 0
@@ -1554,7 +1644,9 @@
 
     .card img.media-element.file-default {
         padding: 0px;
-        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
     }
 
     /*curator*/
@@ -1573,7 +1665,6 @@
 
     /*news */
     .news article.node-teaser {
-        width: 70%;
         padding: 15px;
         background: #fff;
     }
@@ -1595,13 +1686,24 @@
         margin: 0 1.5em 0em 0;
     }
 
+    .news h1.node-title {
+        font-size: 20px;
+    }
+
+    .news .two-66-33>.region-two-66-33-first {
+        width: 70.1%
+    }
+
+    .news .two-66-33>.region-two-66-33-second {
+        width: 26.333%
+    }
+
+
     /* people lg pic */
 
     .people-lop-lrg-pic .os-sv-list.sv-list-person {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-
     }
 
     .people-lop-lrg-pic h1 a:after {
@@ -1623,6 +1725,11 @@
         border-bottom: 4px #939598 solid;
         position: relative;
         transition-duration: .5s;
+    }
+
+    .people-lop-lrg-pic article.node-person {
+        margin-right: 1.5%;
+        margin-left: 1.5%;
     }
 
     .people-lop-lrg-pic article.node-person:hover {
@@ -1737,8 +1844,6 @@
 
     }
 
-
-
     .get .card h2,
     .get .card h3 {
         line-height: 1.5;
@@ -1819,6 +1924,43 @@
     .calendar-calendar .week-view .full td.multi-day div.weekview,
     .calendar-calendar .day-view .full td.multi-day div.dayview {
         background-color: #A41135;
+    }
+
+    /*search */
+    .block-boxes-os_search_solr_search_box {
+        display: none;
+    }
+
+    #menu-wrapper {
+        position: relative;
+    }
+
+    #menu-bar ul.nice-menu li.last a[title="Site Search"] {
+        padding: 20px 30px;
+        background-image: url(https://hwpi.harvard.edu/files/mahindra/files/search-dark.png?m=1590518735);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18px;
+        font-size: 0;
+    }
+
+    .landing #menu-bar ul.nice-menu li.last a[title="Site Search"] {
+        background-image: url(https://hwpi.harvard.edu/files/mahindra/files/search-light.png?m=1590518757);
+        background-size: 25px;
+    }
+
+    .block-boxes-os_search_solr_search_box.show {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        z-index: 10;
+        background-color: #333;
+        padding: 15px;
+    }
+
+    #menu-bar nav#block-boxes-solr-search-box {
+        width: 300px;
     }
 
     /* footer */
@@ -1906,7 +2048,7 @@
         #menu-bar #block-os-primary-menu.opened {
             top: 38px;
             width: 100% !important;
-            right: -20px;
+            right: 0px;
         }
 
         .hg-container {
@@ -2006,7 +2148,10 @@
 
         .news article.node-teaser {
             width: 90%;
+        }
 
+        #menu-bar #block-os-primary-menu ul.nice-menu li.last a[title="Site Search"] {
+            display: none;
         }
 
     }
@@ -2023,11 +2168,6 @@
         /***** BASE THEME ****/
         .event-start .event-content {
             margin-left: 40px !important;
-        }
-
-        .not-front .band h2.block-title,
-        .front .block h2.block-title {
-            padding-left: 20px;
         }
 
         .block-boxes-os_boxes_html.band .boxes-box-content,
@@ -2078,6 +2218,25 @@
             margin-left: 50px !important;
         }
 
+        .block-boxes-os_sv_list_box .field-name-field-date.field-type-datetime {
+            margin-left: 0px !important;
+        }
+
+        .front .equal .white-block .block-inner>.block-content.content,
+        .front .equal .card .block-inner>.block-content.content,
+        .landing .equal .card .block-inner>.block-content.content,
+        .landing.about .people .card .block-inner>.block-content.content,
+        .landing.get .primary-band .card .block-inner>.block-content.content  {
+            width: 80%;
+        }
+
+        .front .content-left.content-right.content-bottom #content-panels .region {
+            margin-bottom: 0px;
+        }
+
+        #content-column h2.block-title {
+            margin-left: 7px;
+        }
     }
 
     @media(max-width:670px) {
@@ -2116,6 +2275,13 @@
             padding: 30px 0px;
         }
 
+        .landing.videos .sv-list-link article,
+        .landing.videos .sv-list-link article:not(:nth-child(4n)) {
+            flex-basis: 43.5%;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+        }
+
     }
 
     @media(max-width:660px) {
@@ -2135,6 +2301,7 @@
 
         .people-lop-lrg-pic article.node-person {
             margin: auto;
+            margin-bottom: 20px;
         }
 
         .view-os-events.view-id-os_events .attachment-before {
@@ -2144,8 +2311,24 @@
         .view-os-events ul li .node .field.field-name-body.field-type-text-with-summary {
             margin-top: 20px;
         }
-    }
 
+        .landing.videos .sv-list-link article,
+        .landing.videos .sv-list-link article:not(:nth-child(4n)) {
+            flex-basis: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .front .equal .white-block .block-inner>.block-content.content,
+        .front .equal .card .block-inner>.block-content.content,
+        .landing .equal .card .block-inner>.block-content.content,
+        .landing.about .people .card .block-inner>.block-content.content,
+        .landing.about .card .block-inner>.block-content.content,
+        .landing.get .primary-band .card .block-inner>.block-content.content {
+            width: 100%;
+        }
+
+    }
 
     @media(max-width:479px) {
 

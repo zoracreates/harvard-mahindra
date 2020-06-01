@@ -7,6 +7,7 @@
         /* wrapp logo and main menu*/
         var logo = document.getElementById('block-boxes-1585939273');
         var primaryNav = document.getElementById('block-os-primary-menu');
+        var search = document.getElementById('block-boxes-solr-search-box');
 
         var menuWrapper = document.createElement('div');
 
@@ -16,6 +17,12 @@
 
         menuWrapper.appendChild(logo);
         menuWrapper.appendChild(primaryNav);
+        menuWrapper.appendChild(search);
+
+        // TOGGLES THE SEARCH BLOCK
+        jQuery('#menu-bar ul.nice-menu li.last a[title="Site Search"]').click(function () {
+            jQuery('.block-boxes-os_search_solr_search_box').toggleClass('show');
+        });
 
         // makes lop news pic use full size image
         setInterval(function () {
@@ -30,7 +37,7 @@
         jQuery(".people-lop-lrg-pic article.node-person .field-name-field-person-photo").each(function () {
             jQuery(this).html(jQuery(this).html().replace("profile_thumbnail", "profile_full"));
         });
-       // }, 250);
+        // }, 250);
 
         /* equal heights */
 
