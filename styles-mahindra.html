@@ -824,13 +824,15 @@
         flex-wrap: wrap;
     }
 
-    .seminar-page .sv-list-person article {
+    .seminar-page .sv-list-person article.node-person {
         flex-basis: 30%;
         display: flex;
+        padding: 0px;
     }
 
-    .seminar-page .sv-list-person article:not(:first-child) {
-        padding-left: 25px;
+    .seminar-page .sv-list-person article:not(:first-child):not(:nth-child(4n)) {
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .seminar-page .sv-list-person .field-name-field-professional-title,
@@ -1583,6 +1585,7 @@
 
     .secondary-band {
         background-color: #D4D4D4;
+        margin-top: 20px;
     }
 
     .card .block-content.content {
