@@ -1,9 +1,5 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
-
-
-    jQuery(document).ready(function () {
-
         /* wrapp logo and main menu*/
         var logo = document.getElementById('block-boxes-1585939273');
         var primaryNav = document.getElementById('block-os-primary-menu');
@@ -18,6 +14,8 @@
         menuWrapper.appendChild(logo);
         menuWrapper.appendChild(primaryNav);
         menuWrapper.appendChild(search);
+
+    jQuery(document).ready(function () {
 
         // TOGGLES THE SEARCH BLOCK
         jQuery('#menu-bar ul.nice-menu li.last a[title="Site Search"]').click(function () {
