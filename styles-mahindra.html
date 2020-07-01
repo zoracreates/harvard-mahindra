@@ -2040,7 +2040,8 @@
         background-size: 25px;
     }
 
-    #menu-bar .block-boxes-os_search_solr_search_box.show {
+    #menu-bar .block-boxes-os_search_solr_search_box.show,
+    #menu-bar .block-boxes-os_search_solr_search_box.opened {
         display: block;
         position: absolute;
         right: 0;
@@ -2049,6 +2050,7 @@
         background-color: #333;
         padding: 15px;
     }
+
 
     #menu-bar nav#block-boxes-solr-search-box {
         width: 300px;
@@ -2120,12 +2122,17 @@
     }
 
     /* BROSWER SPECIFIC RULES END */
-    @media (max-width: 1080px) {}
+    @media (max-width: 1080px) { }
 
 
     @media(max-width:1008px) {
 
         /***** BASE THEME ****/
+
+        #menu-bar .block-boxes-os_search_solr_search_box.opened {
+        right: -15px;
+        top: -20px;
+    }
         #branding_header {
             position: relative;
             z-index: 2;
