@@ -2,7 +2,7 @@
 
 The following CSS and JavaScript files have been added to the new Mahindra Humanities Center (MHC) via [Open Scholar embed media widgets](https://help.theopenscholar.com/embed-media-widget), to customize a [one page theme](https://help.theopenscholar.com/one-page-themes).
 
-This website is currently in development by Harvard Web Publishing and has not yet launched.
+This website launched on June 2020.
 
 ## Website Goals
 1. Transfer the original MHC from a non-Harvard managed Drupal platform, to a Harvard managed Open Scholar platform
