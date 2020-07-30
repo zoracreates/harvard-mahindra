@@ -17,4 +17,4 @@ This website launched on June 2020.
 * Custom typography and type hierarchy
 * Hero images on landing pages extend up to the menu. 
 * A customized Harvard University branding bar at the top of the page, which places the Harvard logo to the right instead of the left of the page, and has a transparent background on landing pages.
-* A search bard that colapses and expands horizontally 
+* A search bar that colapses and expands horizontally 
