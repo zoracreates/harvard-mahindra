@@ -1,6 +1,6 @@
 # Mahindra Humanities Center Open Scholar Theme
 
-The following CSS and JavaScript files have been added to the new Mahindra Humanities Center (MHC) via [Open Scholar embed media widgets](https://help.theopenscholar.com/embed-media-widget), to customize a [one page theme](https://help.theopenscholar.com/one-page-themes).
+The following CSS and JavaScript files have been added to the new [Mahindra Humanities Center (MHC)](https://mahindrahumanities.fas.harvard.edu/) via [Open Scholar embed media widgets](https://help.theopenscholar.com/embed-media-widget), to customize a [one page theme](https://help.theopenscholar.com/one-page-themes).
 
 This website launched on June 2020.
 
